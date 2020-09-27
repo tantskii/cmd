@@ -5,6 +5,7 @@
 
 #pragma once
 #include "command_block.h"
+#include <memory>
 
 class IComponent;
 class IMediator;

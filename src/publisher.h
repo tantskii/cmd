@@ -6,6 +6,7 @@
 #pragma once
 #include "string"
 #include <ctime>
+#include <memory>
 
 class ISubscriber;
 class IPublisher;

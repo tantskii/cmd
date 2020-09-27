@@ -11,6 +11,7 @@
 #include "logger.h"
 #include "command_block.h"
 #include <vector>
+#include <memory>
 
 
 /*!

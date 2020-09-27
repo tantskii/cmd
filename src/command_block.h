@@ -8,6 +8,7 @@
 #include "command.h"
 #include <vector>
 #include <sstream>
+#include <memory>
 
 class CommandBlock;
 class StaticCommandBlock;
