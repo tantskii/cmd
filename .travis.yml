@@ -1,5 +1,11 @@
 language: cpp
-compiler: clang
+compiler: gcc
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-7
 git:
 - submodules: false
 before_install:
@@ -19,6 +25,8 @@ before_script:
 - sudo apt-get install doxygen
 - sudo apt-get install graphviz
 script:
+- export CC=gcc-7
+- export CXX=g++-7
 - mkdir build
 - cd build
 - cmake ..
