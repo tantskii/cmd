@@ -53,7 +53,7 @@ private:
  */
 class File {
 public:
-    File(std::filesystem::path);    ///< Открывает файл.
+    File(std::__fs::filesystem::path);    ///< Открывает файл.
     void write(const std::string&); ///< Записывает в файл переданную строку.
     ~File();                        ///< Закрывает файл.
 private:
@@ -67,12 +67,12 @@ private:
 class FileLogger : public ILogger, public ISubscriber {
 public:
     FileLogger();
-    void setOutputDirectory(const std::filesystem::path&);
+    void setOutputDirectory(const std::__fs::filesystem::path&);
     void update(const std::string&, time_t) override; ///< Логгирует переданное сообщение.
 private:
     std::string makeFileName(time_t) const;  ///< Создает название лог-файла.
     
-    std::filesystem::path m_dir = std::filesystem::current_path() / "log";
+    std::__fs::filesystem::path m_dir = std::__fs::filesystem::current_path() / "log";
     bool m_dir_exists;
 };
 

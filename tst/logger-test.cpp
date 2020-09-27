@@ -6,7 +6,7 @@
 #include <fstream>
 #include <string>
 
-namespace fs = std::filesystem;
+namespace fs = std::__fs::filesystem;
 
 
 TEST(OStreamLogger, Update) {

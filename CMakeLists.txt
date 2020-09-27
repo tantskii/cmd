@@ -15,7 +15,7 @@ set(LOG_DIRECTORY ${CMAKE_SOURCE_DIR}/log)
 configure_file(src/log_dir.h.in "${CMAKE_SOURCE_DIR}/src/log_dir.h")
 
 set_target_properties(bulk bulk_test bulk_lib PROPERTIES
-    CXX_STANDARD 17
+    CXX_STANDARD 14
     CXX_STANDARD_REQUIRED ON
 )
 
@@ -46,13 +46,13 @@ if (MSVC)
     )
 else ()
     target_compile_options(bulk PRIVATE
-        -Wall -Wextra -pedantic -Werror -lstdc++fs
+        -Wall -Wextra -pedantic -Werror
     )
     target_compile_options(bulk_test PRIVATE
-        -Wall -Wextra -pedantic -Werror -lstdc++fs
+        -Wall -Wextra -pedantic -Werror
     )
     target_compile_options(bulk_lib PRIVATE
-        -Wall -Wextra -pedantic -Werror -lstdc++fs
+        -Wall -Wextra -pedantic -Werror
     )
 endif()
 
