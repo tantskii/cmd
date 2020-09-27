@@ -1,13 +1,13 @@
 #include "logger.h"
 
-namespace fs = std::filesystem;
+//namespace fs = std::filesystem;
 
 
 /*!
  В конструкторе создается файл, в который будет записана строка.
  @param filepath Путь до лог-файла.
  */
-File::File(fs::path filepath) {
+File::File(std::filesystem::path filepath) {
     m_file.open(filepath, std::ios_base::out);
 }
 
@@ -34,7 +34,7 @@ void File::write(const std::string& info) {
  @param dir Путь до директории, куда будут сохранятся лог-файлы.
  */
 FileLogger::FileLogger()
-    : m_dir_exists(fs::exists(m_dir))
+    : m_dir_exists(std::filesystem::exists(m_dir))
 {}
 
 
@@ -42,12 +42,12 @@ FileLogger::FileLogger()
  Устанавливает директорию для сохранения файлов с логами.
  @throw std::runtime_error В случае, если по переданному пути лежит не директория.
  */
-void FileLogger::setOutputDirectory(const fs::path& dir) {
+void FileLogger::setOutputDirectory(const std::filesystem::path& dir) {
     // Проверить что передали именно директорию
     // Если ее не существует -- создать
     
-    bool exists = fs::exists(dir);
-    bool is_dir = fs::is_directory(dir);
+    bool exists = std::filesystem::exists(dir);
+    bool is_dir = std::filesystem::is_directory(dir);
     
     if (exists && !is_dir) {
         std::string error_message = std::string(dir) + " is not a directory.";
@@ -76,10 +76,10 @@ std::string FileLogger::makeFileName(time_t timestamp) const {
  */
 void FileLogger::update(const std::string& message, time_t timestamp) {
     if (!m_dir_exists) {
-        m_dir_exists = fs::create_directory(m_dir);
+        m_dir_exists = std::filesystem::create_directory(m_dir);
         if (!m_dir_exists) {
             std::string error_message = "Failed to create a directory ";
-            error_message += fs::absolute(m_dir);
+            error_message += std::filesystem::absolute(m_dir);
             throw std::runtime_error(error_message);
         }
     }
