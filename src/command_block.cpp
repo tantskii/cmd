@@ -38,4 +38,4 @@ std::string CommandBlock::execute() const {
     }
     ss << m_commands[m_commands.size() - 1];
     return ss.str();
-};
+}
