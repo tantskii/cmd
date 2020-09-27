@@ -46,13 +46,13 @@ if (MSVC)
     )
 else ()
     target_compile_options(bulk PRIVATE
-        -Wall -Wextra -pedantic -Werror
+        -Wall -Wextra -pedantic -Werror -lstdc++fs
     )
     target_compile_options(bulk_test PRIVATE
-        -Wall -Wextra -pedantic -Werror
+        -Wall -Wextra -pedantic -Werror -lstdc++fs
     )
     target_compile_options(bulk_lib PRIVATE
-        -Wall -Wextra -pedantic -Werror
+        -Wall -Wextra -pedantic -Werror -lstdc++fs
     )
 endif()
 
