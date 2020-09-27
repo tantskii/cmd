@@ -1,0 +1,3 @@
+#pragma once
+
+#cmakedefine LOG_DIRECTORY "@LOG_DIRECTORY@"
