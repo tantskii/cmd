@@ -56,6 +56,12 @@ else ()
     )
 endif()
 
+if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
+    target_link_libraries(bulk c++experimental)
+elseif("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
+    target_link_libraries(bulk stdc++fs)
+endif()
+
 install(TARGETS bulk RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
