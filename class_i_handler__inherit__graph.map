@@ -1,0 +1,5 @@
+<map id="IHandler" name="IHandler">
+<area shape="rect" id="node2" href="$class_dynamic_command_block_handler.html" title="{DynamicCommandBlockHandler\n||+ parse()\l}" alt="" coords="5,153,240,230"/>
+<area shape="rect" id="node3" href="$class_state_distribution_handler.html" title="{StateDistributionHandler\n||+ parse()\l}" alt="" coords="265,153,447,230"/>
+<area shape="rect" id="node4" href="$class_static_command_block_handler.html" title="{StaticCommandBlockHandler\n||+ StaticCommandBlockHandler()\l+ parse()\l}" alt="" coords="471,145,710,237"/>
+</map>

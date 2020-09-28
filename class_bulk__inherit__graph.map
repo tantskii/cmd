@@ -1,0 +1,4 @@
+<map id="Bulk" name="Bulk">
+<area shape="rect" id="node2" href="$class_i_publisher.html" title="{IPublisher\n||+ ~IPublisher()\l+ attach()\l+ notify()\l}" alt="" coords="5,5,128,112"/>
+<area shape="rect" id="node3" href="$class_i_mediator.html" title="{IMediator\n||+ ~IMediator()\l+ notify()\l}" alt="" coords="153,13,271,105"/>
+</map>

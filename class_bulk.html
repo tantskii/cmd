@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>bulk: Класс Bulk</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">bulk
+   &#160;<span id="projectnumber">0.0.24</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_bulk-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Bulk</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="bulk_8h_source.html">bulk.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:Bulk:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_bulk__inherit__graph.png" border="0" usemap="#_bulk_inherit__map" alt="Inheritance graph"/></div>
+<map name="_bulk_inherit__map" id="_bulk_inherit__map">
+<area shape="rect" id="node2" href="class_i_publisher.html" title="{IPublisher\n||+ ~IPublisher()\l+ attach()\l+ notify()\l}" alt="" coords="5,5,128,112"/>
+<area shape="rect" id="node3" href="class_i_mediator.html" title="{IMediator\n||+ ~IMediator()\l+ notify()\l}" alt="" coords="153,13,271,105"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса Bulk:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_bulk__coll__graph.png" border="0" usemap="#_bulk_coll__map" alt="Collaboration graph"/></div>
+<map name="_bulk_coll__map" id="_bulk_coll__map">
+<area shape="rect" id="node2" href="class_i_publisher.html" title="{IPublisher\n||+ ~IPublisher()\l+ attach()\l+ notify()\l}" alt="" coords="5,5,128,112"/>
+<area shape="rect" id="node3" href="class_i_mediator.html" title="{IMediator\n||+ ~IMediator()\l+ notify()\l}" alt="" coords="153,13,271,105"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a4ade69395fc20fca253952a2a7bb7f60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bulk.html#a4ade69395fc20fca253952a2a7bb7f60">attach</a> (<a class="el" href="publisher_8h.html#abd3508111df5593fa86ec117d63ad3d5">ISubscriberPtr</a> subscriber) override</td></tr>
+<tr class="memdesc:a4ade69395fc20fca253952a2a7bb7f60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавлят логгер.  <a href="#a4ade69395fc20fca253952a2a7bb7f60">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4ade69395fc20fca253952a2a7bb7f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d26f2ae3ae010adf74d06a8e6e93f1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bulk.html#a0d26f2ae3ae010adf74d06a8e6e93f1e">notify</a> (const std::string &amp;message, time_t timestamp) const override</td></tr>
+<tr class="memdesc:a0d26f2ae3ae010adf74d06a8e6e93f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оповещает логгеры о новом событии.  <a href="#a0d26f2ae3ae010adf74d06a8e6e93f1e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0d26f2ae3ae010adf74d06a8e6e93f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade8bf824287b11369d1b066627e00d7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bulk.html#ade8bf824287b11369d1b066627e00d7d">notify</a> (<a class="el" href="command__block_8h.html#a6fba661032b48106d2a96989c51ab668">CommandBlockPtr</a> block) const override</td></tr>
+<tr class="memdesc:ade8bf824287b11369d1b066627e00d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает командный блок от парсера.  <a href="#ade8bf824287b11369d1b066627e00d7d">Подробнее...</a><br /></td></tr>
+<tr class="separator:ade8bf824287b11369d1b066627e00d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_i_publisher"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_i_publisher')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_i_publisher.html">IPublisher</a></td></tr>
+<tr class="memitem:aba6a9c151a04280f8cbb95f6c1f1c08f inherit pub_methods_class_i_publisher"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_publisher.html#aba6a9c151a04280f8cbb95f6c1f1c08f">~IPublisher</a> ()=default</td></tr>
+<tr class="separator:aba6a9c151a04280f8cbb95f6c1f1c08f inherit pub_methods_class_i_publisher"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_i_mediator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_i_mediator')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_i_mediator.html">IMediator</a></td></tr>
+<tr class="memitem:ac552f8fac8043f2e094ffbf108ca77c6 inherit pub_methods_class_i_mediator"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_mediator.html#ac552f8fac8043f2e094ffbf108ca77c6">~IMediator</a> ()=default</td></tr>
+<tr class="separator:ac552f8fac8043f2e094ffbf108ca77c6 inherit pub_methods_class_i_mediator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p><a class="el" href="class_bulk.html">Bulk</a> реализуют логику контроля взаимодействия между парсером и логгерами. </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a4ade69395fc20fca253952a2a7bb7f60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ade69395fc20fca253952a2a7bb7f60">&#9670;&nbsp;</a></span>attach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Bulk::attach </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="publisher_8h.html#abd3508111df5593fa86ec117d63ad3d5">ISubscriberPtr</a>&#160;</td>
+          <td class="paramname"><em>observer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавлят логгер. </p>
+<p>Добавляет логгера. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">observer</td><td>Указатель на логгер. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_i_publisher.html#a4fed85152cbb9fffc846e1cd9a5c9a12">IPublisher</a>.</p>
+
+</div>
+</div>
+<a id="a0d26f2ae3ae010adf74d06a8e6e93f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d26f2ae3ae010adf74d06a8e6e93f1e">&#9670;&nbsp;</a></span>notify() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Bulk::notify </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>timestamp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Оповещает логгеры о новом событии. </p>
+<p>Передает всем логгерам (подписчикам) информацию для сохранения. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>Сообщение. </td></tr>
+    <tr><td class="paramname">timestamp</td><td>Метка времени. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_i_publisher.html#ae349ca42002858969e956ec4b86fe2b5">IPublisher</a>.</p>
+
+</div>
+</div>
+<a id="ade8bf824287b11369d1b066627e00d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade8bf824287b11369d1b066627e00d7d">&#9670;&nbsp;</a></span>notify() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Bulk::notify </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="command__block_8h.html#a6fba661032b48106d2a96989c51ab668">CommandBlockPtr</a>&#160;</td>
+          <td class="paramname"><em>block</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получает командный блок от парсера. </p>
+<p>Получает от парсера (компонента) командный блок и выполняет его. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">block</td><td>Указатель на командный блок. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_i_mediator.html#a5973eddbf8783cd076ab6448660a819d">IMediator</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>/home/travis/build/tantskii/cmd/src/<a class="el" href="bulk_8h_source.html">bulk.h</a></li>
+<li>/home/travis/build/tantskii/cmd/src/<a class="el" href="bulk_8cpp.html">bulk.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

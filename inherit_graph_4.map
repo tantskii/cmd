@@ -1,0 +1,6 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node1" href="$class_i_handler.html" title="IHandler" alt="" coords="5,56,83,83"/>
+<area shape="rect" id="node2" href="$class_dynamic_command_block_handler.html" title="DynamicCommandBlockHandler" alt="" coords="131,5,365,32"/>
+<area shape="rect" id="node3" href="$class_state_distribution_handler.html" title="StateDistributionHandler" alt="" coords="157,56,339,83"/>
+<area shape="rect" id="node4" href="$class_static_command_block_handler.html" title="StaticCommandBlockHandler" alt="" coords="141,107,355,133"/>
+</map>

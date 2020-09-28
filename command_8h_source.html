@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>bulk: Исходный файл /home/travis/build/tantskii/cmd/src/command.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">bulk
+   &#160;<span id="projectnumber">0.0.24</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">command.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="command_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;ctime&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_command.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_command.html">Command</a> {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_command.html#a96a64be725e0c92c8075a1850050d2f4">Command</a>(std::string value);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::string <a class="code" href="class_command.html#a412646c96d701f6fdd2f62b10cc3e4b7">execute</a>() <span class="keyword">const</span>;  <span class="comment">//&lt; Выполняет команду.</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    time_t <a class="code" href="class_command.html#a51029b8c6dd4ea450e74d9db8c37f734">getTimestamp</a>() <span class="keyword">const</span>;  <span class="comment">//&lt; Возвращает временную метку создания команды.</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    </div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="class_command.html#a85e1f67cd189bec6a802e512cfbcca6b">operator&lt;&lt;</a>(std::ostream&amp;, <span class="keyword">const</span> <a class="code" href="class_command.html">Command</a>&amp;); </div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">friend</span> std::istream&amp; <a class="code" href="class_command.html#a65708a8596a3827205f89f94716d6a59">operator&gt;&gt;</a>(std::istream&amp;,       <a class="code" href="class_command.html">Command</a>&amp;); </div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::string m_value; </div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    time_t m_timestamp;  </div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="ttc" id="class_command_html_a85e1f67cd189bec6a802e512cfbcca6b"><div class="ttname"><a href="class_command.html#a85e1f67cd189bec6a802e512cfbcca6b">Command::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;, const Command &amp;)</div><div class="ttdoc">Выводит команду в поток вывода. </div><div class="ttdef"><b>Definition:</b> command.cpp:36</div></div>
+<div class="ttc" id="class_command_html_a412646c96d701f6fdd2f62b10cc3e4b7"><div class="ttname"><a href="class_command.html#a412646c96d701f6fdd2f62b10cc3e4b7">Command::execute</a></div><div class="ttdeci">std::string execute() const</div><div class="ttdef"><b>Definition:</b> command.cpp:18</div></div>
+<div class="ttc" id="class_command_html"><div class="ttname"><a href="class_command.html">Command</a></div><div class="ttdef"><b>Definition:</b> command.h:15</div></div>
+<div class="ttc" id="class_command_html_a51029b8c6dd4ea450e74d9db8c37f734"><div class="ttname"><a href="class_command.html#a51029b8c6dd4ea450e74d9db8c37f734">Command::getTimestamp</a></div><div class="ttdeci">time_t getTimestamp() const</div><div class="ttdef"><b>Definition:</b> command.cpp:27</div></div>
+<div class="ttc" id="class_command_html_a65708a8596a3827205f89f94716d6a59"><div class="ttname"><a href="class_command.html#a65708a8596a3827205f89f94716d6a59">Command::operator&gt;&gt;</a></div><div class="ttdeci">friend std::istream &amp; operator&gt;&gt;(std::istream &amp;, Command &amp;)</div><div class="ttdoc">Считывает каманду из потока ввода. </div><div class="ttdef"><b>Definition:</b> command.cpp:46</div></div>
+<div class="ttc" id="class_command_html_a96a64be725e0c92c8075a1850050d2f4"><div class="ttname"><a href="class_command.html#a96a64be725e0c92c8075a1850050d2f4">Command::Command</a></div><div class="ttdeci">Command(std::string value)</div><div class="ttdef"><b>Definition:</b> command.cpp:8</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>bulk: Класс IHandler</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">bulk
+   &#160;<span id="projectnumber">0.0.24</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_i_handler-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс IHandler<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="parser_8h_source.html">parser.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:IHandler:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_i_handler__inherit__graph.png" border="0" usemap="#_i_handler_inherit__map" alt="Inheritance graph"/></div>
+<map name="_i_handler_inherit__map" id="_i_handler_inherit__map">
+<area shape="rect" id="node2" href="class_dynamic_command_block_handler.html" title="{DynamicCommandBlockHandler\n||+ parse()\l}" alt="" coords="5,153,240,230"/>
+<area shape="rect" id="node3" href="class_state_distribution_handler.html" title="{StateDistributionHandler\n||+ parse()\l}" alt="" coords="265,153,447,230"/>
+<area shape="rect" id="node4" href="class_static_command_block_handler.html" title="{StaticCommandBlockHandler\n||+ StaticCommandBlockHandler()\l+ parse()\l}" alt="" coords="471,145,710,237"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса IHandler:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_i_handler__coll__graph.png" border="0" usemap="#_i_handler_coll__map" alt="Collaboration graph"/></div>
+<map name="_i_handler_coll__map" id="_i_handler_coll__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ab7e6ef05f6bc45d0332b84b0d1908f2c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_handler.html#ab7e6ef05f6bc45d0332b84b0d1908f2c">~IHandler</a> ()=default</td></tr>
+<tr class="separator:ab7e6ef05f6bc45d0332b84b0d1908f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d368ab7f13dabc2725c2102f40932b8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_handler.html#a2d368ab7f13dabc2725c2102f40932b8">parse</a> (<a class="el" href="class_parser.html">Parser</a> &amp;, std::istream &amp;)=0</td></tr>
+<tr class="memdesc:a2d368ab7f13dabc2725c2102f40932b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обрабатывает данные из входного потока.  <a href="#a2d368ab7f13dabc2725c2102f40932b8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2d368ab7f13dabc2725c2102f40932b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Интерфейс обработчика командного блока. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="ab7e6ef05f6bc45d0332b84b0d1908f2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7e6ef05f6bc45d0332b84b0d1908f2c">&#9670;&nbsp;</a></span>~IHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual IHandler::~IHandler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a2d368ab7f13dabc2725c2102f40932b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d368ab7f13dabc2725c2102f40932b8">&#9670;&nbsp;</a></span>parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IHandler::parse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_parser.html">Parser</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обрабатывает данные из входного потока. </p>
+
+<p>Замещается в <a class="el" href="class_dynamic_command_block_handler.html#ac29808b6c4d6c108c64b0d7307252ac6">DynamicCommandBlockHandler</a>, <a class="el" href="class_static_command_block_handler.html#ac725884429b31ac234e990613cf67d20">StaticCommandBlockHandler</a> и <a class="el" href="class_state_distribution_handler.html#a64ac9994e706cefcd9951e39084ae0f0">StateDistributionHandler</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>/home/travis/build/tantskii/cmd/src/<a class="el" href="parser_8h_source.html">parser.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

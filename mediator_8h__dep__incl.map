@@ -1,0 +1,8 @@
+<map id="/home/travis/build/tantskii/cmd/src/mediator.h" name="/home/travis/build/tantskii/cmd/src/mediator.h">
+<area shape="rect" id="node2" href="$bulk_8h.html" title="Заголовчный файл к классом, который осуществляет контроль взаимодействия других объектов. " alt="" coords="126,95,301,136"/>
+<area shape="rect" id="node5" href="$parser_8h.html" title="Заголовочный файл, объявление парсера данных из входного потока, интерфейса обработчика, а так же обработчиков статического, динамического и распределительного блоков. " alt="" coords="325,95,512,136"/>
+<area shape="rect" id="node7" href="$mediator_8cpp.html" title="/home/travis/build\l/tantskii/cmd/src/mediator.cpp" alt="" coords="536,95,755,136"/>
+<area shape="rect" id="node3" href="$bulk_8cpp.html" title="/home/travis/build\l/tantskii/cmd/src/bulk.cpp" alt="" coords="5,184,195,225"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="/home/travis/build\l/tantskii/cmd/src/main.cpp" alt="" coords="219,184,413,225"/>
+<area shape="rect" id="node6" href="$parser_8cpp.html" title="/home/travis/build\l/tantskii/cmd/src/parser.cpp" alt="" coords="438,184,639,225"/>
+</map>

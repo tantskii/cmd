@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>bulk: Файл /home/travis/build/tantskii/cmd/src/parser.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">bulk
+   &#160;<span id="projectnumber">0.0.24</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#typedef-members">Определения типов</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл parser.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Заголовочный файл, объявление парсера данных из входного потока, интерфейса обработчика, а так же обработчиков статического, динамического и распределительного блоков.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="command__block_8h_source.html">command_block.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mediator_8h_source.html">mediator.h</a>&quot;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для parser.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="parser_8h__incl.png" border="0" usemap="#_2home_2travis_2build_2tantskii_2cmd_2src_2parser_8h" alt=""/></div>
+<map name="_2home_2travis_2build_2tantskii_2cmd_2src_2parser_8h" id="_2home_2travis_2build_2tantskii_2cmd_2src_2parser_8h">
+<area shape="rect" id="node2" href="command__block_8h.html" title="Заголовочный файл, содержащий объявление класса базового блока. От этого класса будут унаследованы кл..." alt="" coords="239,169,380,196"/>
+<area shape="rect" id="node10" href="mediator_8h.html" title="Заголовочный файл, содержит объявление интерфейсов шаблона Mediator. " alt="" coords="347,95,439,121"/>
+<area shape="rect" id="node3" href="command_8h.html" title="Заголовочный файл, содержит объявление класса команды. " alt="" coords="69,244,168,271"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="parser_8h__dep__incl.png" border="0" usemap="#_2home_2travis_2build_2tantskii_2cmd_2src_2parser_8hdep" alt=""/></div>
+<map name="_2home_2travis_2build_2tantskii_2cmd_2src_2parser_8hdep" id="_2home_2travis_2build_2tantskii_2cmd_2src_2parser_8hdep">
+<area shape="rect" id="node2" href="main_8cpp.html" title="/home/travis/build\l/tantskii/cmd/src/main.cpp" alt="" coords="5,95,200,136"/>
+<area shape="rect" id="node3" href="parser_8cpp.html" title="/home/travis/build\l/tantskii/cmd/src/parser.cpp" alt="" coords="225,95,426,136"/>
+</map>
+</div>
+</div>
+<p><a href="parser_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_handler.html">IHandler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parser.html">Parser</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state_distribution_handler.html">StateDistributionHandler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_command_block_handler.html">StaticCommandBlockHandler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamic_command_block_handler.html">DynamicCommandBlockHandler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:a64fad772a02edf89e0401e1d751f167a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8h.html#a64fad772a02edf89e0401e1d751f167a">IHandlerPtr</a> = std::unique_ptr&lt; <a class="el" href="class_i_handler.html">IHandler</a> &gt;</td></tr>
+<tr class="memdesc:a64fad772a02edf89e0401e1d751f167a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сокращение для указателя на базовый класс обработчика.  <a href="#a64fad772a02edf89e0401e1d751f167a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a64fad772a02edf89e0401e1d751f167a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Заголовочный файл, объявление парсера данных из входного потока, интерфейса обработчика, а так же обработчиков статического, динамического и распределительного блоков. </p>
+</div><h2 class="groupheader">Типы</h2>
+<a id="a64fad772a02edf89e0401e1d751f167a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64fad772a02edf89e0401e1d751f167a">&#9670;&nbsp;</a></span>IHandlerPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="parser_8h.html#a64fad772a02edf89e0401e1d751f167a">IHandlerPtr</a> =  std::unique_ptr&lt;<a class="el" href="class_i_handler.html">IHandler</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сокращение для указателя на базовый класс обработчика. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

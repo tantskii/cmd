@@ -1,0 +1,4 @@
+<map id="ILogger" name="ILogger">
+<area shape="rect" id="node2" href="$class_file_logger.html" title="Логгер, который выводит информацию в файлы. " alt="" coords="5,160,176,267"/>
+<area shape="rect" id="node3" href="$class_o_stream_logger.html" title="Логгер, который выводит информацию в std::ostream. " alt="" coords="201,167,349,259"/>
+</map>

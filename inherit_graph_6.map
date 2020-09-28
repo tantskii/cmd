@@ -1,0 +1,6 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node1" href="$class_i_logger.html" title="Интерфейс логгера. Является подписчиком в шаблоне Publisher&#45;Subscriber. " alt="" coords="17,5,88,32"/>
+<area shape="rect" id="node2" href="$class_file_logger.html" title="Логгер, который выводит информацию в файлы. " alt="" coords="165,5,253,32"/>
+<area shape="rect" id="node3" href="$class_o_stream_logger.html" title="Логгер, который выводит информацию в std::ostream. " alt="" coords="148,56,271,83"/>
+<area shape="rect" id="node4" href="$class_i_subscriber.html" title="ISubscriber" alt="" coords="5,56,100,83"/>
+</map>

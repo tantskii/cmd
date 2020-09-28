@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>bulk: Файл /home/travis/build/tantskii/cmd/src/command_block.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">bulk
+   &#160;<span id="projectnumber">0.0.24</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#typedef-members">Определения типов</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл command_block.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Заголовочный файл, содержащий объявление класса базового блока. От этого класса будут унаследованы классы DynamicBlock и StaticBlock.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="command_8h_source.html">command.h</a>&quot;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для command_block.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="command__block_8h__incl.png" border="0" usemap="#_2home_2travis_2build_2tantskii_2cmd_2src_2command__block_8h" alt=""/></div>
+<map name="_2home_2travis_2build_2tantskii_2cmd_2src_2command__block_8h" id="_2home_2travis_2build_2tantskii_2cmd_2src_2command__block_8h">
+<area shape="rect" id="node2" href="command_8h.html" title="Заголовочный файл, содержит объявление класса команды. " alt="" coords="79,109,177,136"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="command__block_8h__dep__incl.png" border="0" usemap="#_2home_2travis_2build_2tantskii_2cmd_2src_2command__block_8hdep" alt=""/></div>
+<map name="_2home_2travis_2build_2tantskii_2cmd_2src_2command__block_8hdep" id="_2home_2travis_2build_2tantskii_2cmd_2src_2command__block_8hdep">
+<area shape="rect" id="node2" href="mediator_8h.html" title="Заголовочный файл, содержит объявление интерфейсов шаблона Mediator. " alt="" coords="311,117,515,158"/>
+<area shape="rect" id="node3" href="bulk_8h.html" title="Заголовчный файл к классом, который осуществляет контроль взаимодействия других объектов. " alt="" coords="58,213,233,255"/>
+<area shape="rect" id="node5" href="main_8cpp.html" title="/home/travis/build\l/tantskii/cmd/src/main.cpp" alt="" coords="219,303,413,344"/>
+<area shape="rect" id="node6" href="parser_8h.html" title="Заголовочный файл, объявление парсера данных из входного потока, интерфейса обработчика, а так же обработчиков статического, динамического и распределительного блоков. " alt="" coords="551,213,737,255"/>
+<area shape="rect" id="node9" href="command__block_8cpp.html" title="/home/travis/build\l/tantskii/cmd/src/command\l_block.cpp" alt="" coords="590,109,789,165"/>
+<area shape="rect" id="node10" href="dynamic__block_8cpp.html" title="/home/travis/build\l/tantskii/cmd/src/dynamic\l_block.cpp" alt="" coords="813,109,1003,165"/>
+<area shape="rect" id="node11" href="static__block_8cpp.html" title="/home/travis/build\l/tantskii/cmd/src/static\l_block.cpp" alt="" coords="1028,109,1199,165"/>
+<area shape="rect" id="node8" href="mediator_8cpp.html" title="/home/travis/build\l/tantskii/cmd/src/mediator.cpp" alt="" coords="308,213,527,255"/>
+<area shape="rect" id="node4" href="bulk_8cpp.html" title="/home/travis/build\l/tantskii/cmd/src/bulk.cpp" alt="" coords="5,303,195,344"/>
+<area shape="rect" id="node7" href="parser_8cpp.html" title="/home/travis/build\l/tantskii/cmd/src/parser.cpp" alt="" coords="543,303,745,344"/>
+</map>
+</div>
+</div>
+<p><a href="command__block_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_command_block.html">CommandBlock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовй класс блока команд, задачей которого является хранение набора комманд.  <a href="class_command_block.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_command_block.html">StaticCommandBlock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Статический блок команд, который может содержать ровно StaticCommandBlock::m_block_size комманд.  <a href="class_static_command_block.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamic_command_block.html">DynamicCommandBlock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Динамический блок команд, который может содержать произваольное число комманд.  <a href="class_dynamic_command_block.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:a6fba661032b48106d2a96989c51ab668"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command__block_8h.html#a6fba661032b48106d2a96989c51ab668">CommandBlockPtr</a> = std::unique_ptr&lt; <a class="el" href="class_command_block.html">CommandBlock</a> &gt;</td></tr>
+<tr class="memdesc:a6fba661032b48106d2a96989c51ab668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на базовый командный блок.  <a href="#a6fba661032b48106d2a96989c51ab668">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6fba661032b48106d2a96989c51ab668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17957c8560594eace12abcf57b4ff493"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command__block_8h.html#a17957c8560594eace12abcf57b4ff493">StaticCommandBlockPtr</a> = std::unique_ptr&lt; <a class="el" href="class_static_command_block.html">StaticCommandBlock</a> &gt;</td></tr>
+<tr class="memdesc:a17957c8560594eace12abcf57b4ff493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на статический командный блок.  <a href="#a17957c8560594eace12abcf57b4ff493">Подробнее...</a><br /></td></tr>
+<tr class="separator:a17957c8560594eace12abcf57b4ff493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad730af559a99fd33ed36b974aa61861b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command__block_8h.html#ad730af559a99fd33ed36b974aa61861b">DynamicCommandBlockPtr</a> = std::unique_ptr&lt; <a class="el" href="class_dynamic_command_block.html">DynamicCommandBlock</a> &gt;</td></tr>
+<tr class="memdesc:ad730af559a99fd33ed36b974aa61861b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на динамический командный блок.  <a href="#ad730af559a99fd33ed36b974aa61861b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad730af559a99fd33ed36b974aa61861b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Заголовочный файл, содержащий объявление класса базового блока. От этого класса будут унаследованы классы DynamicBlock и StaticBlock. </p>
+</div><h2 class="groupheader">Типы</h2>
+<a id="a6fba661032b48106d2a96989c51ab668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fba661032b48106d2a96989c51ab668">&#9670;&nbsp;</a></span>CommandBlockPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="command__block_8h.html#a6fba661032b48106d2a96989c51ab668">CommandBlockPtr</a> =  std::unique_ptr&lt;<a class="el" href="class_command_block.html">CommandBlock</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Указатель на базовый командный блок. </p>
+
+</div>
+</div>
+<a id="ad730af559a99fd33ed36b974aa61861b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad730af559a99fd33ed36b974aa61861b">&#9670;&nbsp;</a></span>DynamicCommandBlockPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="command__block_8h.html#ad730af559a99fd33ed36b974aa61861b">DynamicCommandBlockPtr</a> =  std::unique_ptr&lt;<a class="el" href="class_dynamic_command_block.html">DynamicCommandBlock</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Указатель на динамический командный блок. </p>
+
+</div>
+</div>
+<a id="a17957c8560594eace12abcf57b4ff493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17957c8560594eace12abcf57b4ff493">&#9670;&nbsp;</a></span>StaticCommandBlockPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="command__block_8h.html#a17957c8560594eace12abcf57b4ff493">StaticCommandBlockPtr</a> =  std::unique_ptr&lt;<a class="el" href="class_static_command_block.html">StaticCommandBlock</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Указатель на статический командный блок. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

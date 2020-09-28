@@ -1,0 +1,7 @@
+<map id="/home/travis/build/tantskii/cmd/src/bulk.h" name="/home/travis/build/tantskii/cmd/src/bulk.h">
+<area shape="rect" id="node2" href="$publisher_8h.html" title="Заголовочный файл, содержит объявление интерфейсов шаблона Publisher&#45;Subscriber. " alt="" coords="397,169,491,196"/>
+<area shape="rect" id="node6" href="$mediator_8h.html" title="Заголовочный файл, содержит объявление интерфейсов шаблона Mediator. " alt="" coords="179,95,271,121"/>
+<area shape="rect" id="node7" href="$command__block_8h.html" title="Заголовочный файл, содержащий объявление класса базового блока. От этого класса будут унаследованы кл..." alt="" coords="175,169,316,196"/>
+<area shape="rect" id="node12" href="$logger_8h.html" title="Заголовочный файл, содержащий объявление интерфейса логгера. " alt="" coords="519,95,593,121"/>
+<area shape="rect" id="node8" href="$command_8h.html" title="Заголовочный файл, содержит объявление класса команды. " alt="" coords="107,244,205,271"/>
+</map>

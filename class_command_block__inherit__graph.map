@@ -1,0 +1,4 @@
+<map id="CommandBlock" name="CommandBlock">
+<area shape="rect" id="node2" href="$class_dynamic_command_block.html" title="Динамический блок команд, который может содержать произваольное число комманд. " alt="" coords="5,204,188,281"/>
+<area shape="rect" id="node3" href="$class_static_command_block.html" title="Статический блок команд, который может содержать ровно StaticCommandBlock::m_block_size комманд..." alt="" coords="213,189,399,296"/>
+</map>
