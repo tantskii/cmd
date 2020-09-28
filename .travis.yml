@@ -23,7 +23,7 @@ before_script:
 script:
 - mkdir build
 - cd build
-- cmake -D CMAKE_C_COMPILER=gcc-8 -D CMAKE_CXX_COMPILER=g++-8 -D CMAKE_C_FLAGS="-lstdc++fs" ..
+- cmake -D CMAKE_C_COMPILER=gcc-8 -D CMAKE_CXX_COMPILER=g++-8 -D CMAKE_CXX_FLAGS="-lstdc++fs" ..
 - cmake --build .
 - cmake --build . --target package
 - doxygen doxygen.conf
