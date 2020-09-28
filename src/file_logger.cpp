@@ -1,6 +1,6 @@
 #include "logger.h"
 
-namespace fs = std::__fs::filesystem;
+namespace fs = std::filesystem;
 
 
 /*!
