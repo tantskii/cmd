@@ -32,6 +32,11 @@ size_t CommandBlock::size() const {
  @return Строка вывода.
  */
 std::string CommandBlock::execute() const {
+    if (m_commands.empty()) {
+        std::string error_message = "Attempt to execute empty command block";
+        throw std::runtime_error(error_message);
+    }
+    
     std::ostringstream ss;
     for (size_t i = 0; i < m_commands.size() - 1; ++i) {
         ss << m_commands[i].execute() << ", ";

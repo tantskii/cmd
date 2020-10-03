@@ -47,3 +47,49 @@ TEST(Bulk, DynamicBlockExample) {
     
     ASSERT_EQ(output, os.str());
 }
+
+
+TEST(Bulk, HandleStaticEOF) {
+    size_t static_block_size = 3;
+    std::istringstream is;
+    std::ostringstream os;
+    auto bulk = std::make_shared<Bulk>();
+    auto logger = std::make_unique<OStreamLogger>(os);
+    auto parser = Parser();
+    
+    std::string input = "cmd1\ncmd2\ncmd3\n\0";
+    std::string output = "bulk: cmd1, cmd2, cmd3\n";
+    
+    logger->setPrefix("bulk");
+    bulk->attach(std::move(logger));
+    is.str(input);
+    parser.setMediator(bulk);
+    parser.setStaticBlockSize(static_block_size);
+    
+    parser.parse(is);
+    
+    ASSERT_EQ(output, os.str());
+}
+
+TEST(Bulk, HandleDynamicEOF) {
+    size_t static_block_size = 3;
+    std::istringstream is;
+    std::ostringstream os;
+    auto bulk = std::make_shared<Bulk>();
+    auto logger = std::make_unique<OStreamLogger>(os);
+    auto parser = Parser();
+    
+    std::string input = "{\ncmd1\ncmd2\ncmd3\n}\n\0";
+    std::string output = "bulk: cmd1, cmd2, cmd3\n";
+    
+    logger->setPrefix("bulk");
+    bulk->attach(std::move(logger));
+    is.str(input);
+    parser.setMediator(bulk);
+    parser.setStaticBlockSize(static_block_size);
+    
+    parser.parse(is);
+    
+    ASSERT_EQ(output, os.str());
+}
+

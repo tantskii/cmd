@@ -44,3 +44,10 @@ TEST(CommandBlock, GetCommands) {
     ASSERT_EQ(real_commands[0].execute(), expected_commands[0].execute());
     ASSERT_EQ(real_commands[1].execute(), expected_commands[1].execute());
 }
+
+
+TEST(CommandBlock, ExecuteEmptyCommandBlock) {
+    CommandBlock block;
+    
+    ASSERT_THROW(block.execute(), std::runtime_error);
+}

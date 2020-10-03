@@ -79,8 +79,9 @@ void Parser::pass(CommandBlockPtr block) const {
  */
 void StateDistributionHandler::parse(Parser& parser, std::istream& stream) {
     /*
-     * 1. Если перый символ это '{' -- следющий блок является динамическим;
-     * 2. В противном случае        -- следющий блок является статическим;
+     * 1. Если перый символ это '{'  -- следющий блок является динамическим;
+     * 2. Если перый символ это '\0' -- следующий блок отсутсвует;
+     * 3. В противном случае         -- следющий блок является статическим;
      */
 
     char ch;
@@ -91,6 +92,8 @@ void StateDistributionHandler::parse(Parser& parser, std::istream& stream) {
             // п. 1
             stream.putback('{');
             parser.setHandler(parser.createDynamicCommandBlockHandler());
+            break;
+        case '\0':
             break;
         default:
             // п. 2
