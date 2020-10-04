@@ -1,4 +1,4 @@
 <map id="OStreamLogger" name="OStreamLogger">
-<area shape="rect" id="node2" href="$class_i_logger.html" title="Интерфейс логгера. Является подписчиком в шаблоне Publisher&#45;Subscriber. " alt="" coords="5,5,112,112"/>
-<area shape="rect" id="node3" href="$class_i_subscriber.html" title="{ISubscriber\n||+ ~ISubscriber()\l+ update()\l}" alt="" coords="136,13,267,105"/>
+<area shape="rect" id="node2" href="$class_logger.html" title="Базовый класс логгера. " alt="" coords="5,5,109,112"/>
+<area shape="rect" id="node3" href="$class_i_subscriber.html" title="{ISubscriber\n||+ ~ISubscriber()\l+ update()\l}" alt="" coords="133,13,264,105"/>
 </map>

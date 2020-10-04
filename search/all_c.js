@@ -5,6 +5,6 @@ var searchData=
   ['parser_2ecpp',['parser.cpp',['../parser_8cpp.html',1,'']]],
   ['parser_2eh',['parser.h',['../parser_8h.html',1,'']]],
   ['pass',['pass',['../class_parser.html#ac5ab382aca5e0b53df18d76e7d79d1ec',1,'Parser']]],
-  ['prepare',['prepare',['../class_i_logger.html#a3ff2b9ec836288b89cdf465062f0ab30',1,'ILogger']]],
+  ['prepare',['prepare',['../class_logger.html#a853d563a66686f77b4446054a0984f7a',1,'Logger']]],
   ['publisher_2eh',['publisher.h',['../publisher_8h.html',1,'']]]
 ];

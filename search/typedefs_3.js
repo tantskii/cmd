@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['staticcommandblockptr',['StaticCommandBlockPtr',['../command__block_8h.html#a17957c8560594eace12abcf57b4ff493',1,'command_block.h']]]
+  ['loggerptr',['LoggerPtr',['../logger_8h.html#a89f6ed6a42e3dad27d02776c55413c7c',1,'logger.h']]]
 ];

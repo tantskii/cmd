@@ -1,4 +1,3 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node1" href="$class_i_component.html" title="IComponent" alt="" coords="5,5,107,32"/>
-<area shape="rect" id="node2" href="$class_parser.html" title="Parser" alt="" coords="155,5,217,32"/>
+<area shape="rect" id="node1" href="$class_file.html" title="Обертка над std::ofstream, созданная для соблюдения идиомы RAII. " alt="" coords="5,5,49,32"/>
 </map>

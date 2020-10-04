@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">bulk
-   &#160;<span id="projectnumber">0.0.25</span>
+   &#160;<span id="projectnumber">0.0.26</span>
    </div>
   </td>
  </tr>
@@ -105,8 +105,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Классы</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_logger.html">ILogger</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Интерфейс логгера. Является подписчиком в шаблоне Publisher-Subscriber.  <a href="class_i_logger.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logger.html">Logger</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый класс логгера.  <a href="class_logger.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_stream_logger.html">OStreamLogger</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Логгер, который выводит информацию в std::ostream.  <a href="class_o_stream_logger.html#details">Подробнее...</a><br /></td></tr>
@@ -125,9 +125,9 @@ $(function() {
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Определения типов</h2></td></tr>
-<tr class="memitem:aa33b63b5453ae6b980f1bd1fb57617d5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#aa33b63b5453ae6b980f1bd1fb57617d5">ILoggerPtr</a> = std::shared_ptr&lt; <a class="el" href="class_i_logger.html">ILogger</a> &gt;</td></tr>
-<tr class="memdesc:aa33b63b5453ae6b980f1bd1fb57617d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на базовый класс логгера.  <a href="#aa33b63b5453ae6b980f1bd1fb57617d5">Подробнее...</a><br /></td></tr>
-<tr class="separator:aa33b63b5453ae6b980f1bd1fb57617d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89f6ed6a42e3dad27d02776c55413c7c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#a89f6ed6a42e3dad27d02776c55413c7c">LoggerPtr</a> = std::shared_ptr&lt; <a class="el" href="class_logger.html">Logger</a> &gt;</td></tr>
+<tr class="memdesc:a89f6ed6a42e3dad27d02776c55413c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на базовый класс логгера.  <a href="#a89f6ed6a42e3dad27d02776c55413c7c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a89f6ed6a42e3dad27d02776c55413c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Заголовочный файл, содержащий объявление интерфейса логгера. </p>
@@ -151,14 +151,14 @@ $(function() {
 </div>
 </div>
 <h2 class="groupheader">Типы</h2>
-<a id="aa33b63b5453ae6b980f1bd1fb57617d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa33b63b5453ae6b980f1bd1fb57617d5">&#9670;&nbsp;</a></span>ILoggerPtr</h2>
+<a id="a89f6ed6a42e3dad27d02776c55413c7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89f6ed6a42e3dad27d02776c55413c7c">&#9670;&nbsp;</a></span>LoggerPtr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="logger_8h.html#aa33b63b5453ae6b980f1bd1fb57617d5">ILoggerPtr</a> =  std::shared_ptr&lt;<a class="el" href="class_i_logger.html">ILogger</a>&gt;</td>
+          <td class="memname">using <a class="el" href="logger_8h.html#a89f6ed6a42e3dad27d02776c55413c7c">LoggerPtr</a> =  std::shared_ptr&lt;<a class="el" href="class_logger.html">Logger</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">

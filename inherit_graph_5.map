@@ -1,5 +1,6 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node1" href="$class_i_mediator.html" title="IMediator" alt="" coords="7,5,90,32"/>
-<area shape="rect" id="node2" href="$class_bulk.html" title="Bulk" alt="" coords="140,31,191,57"/>
-<area shape="rect" id="node3" href="$class_i_publisher.html" title="IPublisher" alt="" coords="5,56,92,83"/>
+<area shape="rect" id="node1" href="$class_i_subscriber.html" title="ISubscriber" alt="" coords="5,5,100,32"/>
+<area shape="rect" id="node2" href="$class_file_logger.html" title="Логгер, который выводит информацию в файлы. " alt="" coords="165,5,253,32"/>
+<area shape="rect" id="node3" href="$class_o_stream_logger.html" title="Логгер, который выводит информацию в std::ostream. " alt="" coords="148,56,271,83"/>
+<area shape="rect" id="node4" href="$class_logger.html" title="Базовый класс логгера. " alt="" coords="19,56,86,83"/>
 </map>
