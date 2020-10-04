@@ -13,21 +13,14 @@ int main(int argc, const char * argv[]) {
     }
     
     const int StaticBlockSize = std::stoi(argv[1]);
-    
-//    std::istringstream input;
-//    input.str("cmd1\ncmd2\n{\ncmd3\ncmd4\n}\n{\ncmd5\ncmd6\n{\ncmd7\ncmd8\n}\ncmd9\n}\n{\ncmd10\ncmd11\n");
-    
     auto bulk = std::make_shared<Bulk>();
-    
     
     auto logger_1 = std::make_shared<OStreamLogger>(std::cout);
     logger_1->setPrefix("bulk");
     
-    
     auto logger_2 = std::make_shared<FileLogger>();
     logger_2->setPrefix("bulk");
     logger_2->setOutputDirectory(LOG_DIRECTORY);
-    
     
     bulk->attach(logger_1);
     bulk->attach(logger_2);

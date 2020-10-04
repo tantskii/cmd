@@ -33,7 +33,7 @@ public:
 /*!
  Класс парсера входного потока.
  */
-class Parser : public IComponent {
+class Parser : public Component {
 public:
     Parser();                              ///< Конструктор.
     void setStaticBlockSize(size_t);       ///< Задает максимальный размер статического блока команд.

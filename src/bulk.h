@@ -18,7 +18,7 @@
 /*!
  Bulk реализуют логику контроля взаимодействия между парсером и логгерами.
  */
-class Bulk : public IPublisher, public IMediator {
+class Bulk : public IPublisher, public Mediator {
 public:
     void attach(ISubscriberPtr subscriber) override; ///< Добавлят логгер.
     void notify(const std::string& message, time_t timestamp) const override; ///< Оповещает логгеры о новом событии.

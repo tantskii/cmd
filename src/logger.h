@@ -13,21 +13,21 @@
 
 #define UNUSED(x) (void)(x)
 
-class ILogger;
+class Logger;
 class OStreamLogger;
 class FileLogger;
 class File;
 
-using ILoggerPtr = std::shared_ptr<ILogger>; ///< Указатель на базовый класс логгера.
+using LoggerPtr = std::shared_ptr<Logger>; ///< Указатель на базовый класс логгера.
 
 
 
 /*!
- @brief Интерфейс логгера. Является подписчиком в шаблоне Publisher-Subscriber.
+ @brief Базовый класс логгера.
  */
-class ILogger {
+class Logger {
 public:
-    virtual ~ILogger() = default;
+    virtual ~Logger() = default;
     virtual void setPrefix(const std::string& prefix);   ///< Устанавливает префикс для сообщений.
 protected:
     virtual std::string prepare(const std::string& message) const; ///< Собирает финальное логгируемое
@@ -39,7 +39,7 @@ protected:
 /*!
  @brief Логгер, который выводит информацию в  std::ostream.
  */
-class OStreamLogger : public ILogger, public ISubscriber {
+class OStreamLogger : public Logger, public ISubscriber {
 public:
     OStreamLogger(std::ostream& stream);
     void update(const std::string& message, time_t timestamp) override; ///< Логгирует переданное сообщение.
@@ -64,7 +64,7 @@ private:
 /*!
  @brief Логгер, который выводит информацию в файлы.
  */
-class FileLogger : public ILogger, public ISubscriber {
+class FileLogger : public Logger, public ISubscriber {
 public:
     FileLogger();
     void setOutputDirectory(const std::filesystem::path&);

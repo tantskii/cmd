@@ -4,7 +4,7 @@
  Устанавливает префикс для сообщений.
  @param prefix Префикс.
  */
-void ILogger::setPrefix(const std::string& prefix) {
+void Logger::setPrefix(const std::string& prefix) {
     m_prefix = prefix;
 }
 
@@ -12,7 +12,7 @@ void ILogger::setPrefix(const std::string& prefix) {
  Добавляет префикс к сообщению.
  @param message Сообщение.
  */
-std::string ILogger::prepare(const std::string& message) const {
+std::string Logger::prepare(const std::string& message) const {
     return m_prefix + ": " + message + "\n";
 }
 

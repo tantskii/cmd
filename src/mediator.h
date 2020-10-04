@@ -1,36 +1,36 @@
 /*!
  @file
- @brief Заголовочный файл, содержит объявление интерфейсов шаблона Mediator.
+ @brief Заголовочный файл, содержит объявление базовых классов шаблона Mediator.
  */
 
 #pragma once
 #include "command_block.h"
 #include <memory>
 
-class IComponent;
-class IMediator;
+class Component;
+class Mediator;
 
-using IComponentPtr = std::unique_ptr<IComponent>; ///< Указатель на Component.
-using IMediatorPtr  = std::shared_ptr<IMediator>;  ///< Указатель на Mediator.
+using ComponentPtr = std::unique_ptr<Component>; ///< Указатель на Component.
+using MediatorPtr  = std::shared_ptr<Mediator>;  ///< Указатель на Mediator.
 
 
 /*!
- Интерфейс медиатора.
+ Базовый класс медиатора.
  */
-class IMediator {
+class Mediator {
 public:
-    virtual ~IMediator() = default;
+    virtual ~Mediator() = default;
     virtual void notify(CommandBlockPtr) const = 0; ///< Получение командного блока от компонента.
 };
 
 
 /*!
- Интерфейс компонента.
+ Базовый класс компонента.
  */
-class IComponent {
+class Component {
 public:
-    virtual ~IComponent() = default;
-    void setMediator(IMediatorPtr); ///< Установка медиатора.
+    virtual ~Component() = default;
+    void setMediator(MediatorPtr); ///< Установка медиатора.
 protected:
-    IMediatorPtr m_mediator = nullptr;
+    MediatorPtr m_mediator = nullptr;
 };

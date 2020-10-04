@@ -4,6 +4,6 @@
  Устанавливает медиатор (контроллер).
  @param mediator Указатель на медиатор.
  */
-void IComponent::setMediator(IMediatorPtr mediator) {
+void Component::setMediator(MediatorPtr mediator) {
     m_mediator = mediator;
 }
